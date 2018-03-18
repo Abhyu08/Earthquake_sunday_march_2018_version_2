@@ -13,13 +13,12 @@ public class Earthquake_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_earthquake_);
+        ArrayList<String> myArrayList = QueryUtils.extractEarthquakes();
+
+        final EarthquakeAdapter myearthAdapter = new EarthquakeAdapter(this, myArrayList);
+
+        ListView lv = (ListView) findViewById(R.id.listview1);
+
+        lv.setAdapter(myearthAdapter);
     }
-
-    ArrayList<String> myArrayList = QueryUtils.extractEarthquakes();
-
-    EarthquakeAdapter myearthAdapter = new EarthquakeAdapter(this, myArrayList);
-
-    ListView lv = (ListView) findViewById(R.id.listview1);
-
-    //lv.setAdapter(myearthAdapter);
 }

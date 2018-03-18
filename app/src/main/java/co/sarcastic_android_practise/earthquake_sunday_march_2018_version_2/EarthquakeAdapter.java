@@ -60,7 +60,7 @@ public class EarthquakeAdapter extends ArrayAdapter<String> {
         // Display the date of the current earthquake in that TextView
         dateView.setText(formattedDate);
 
-        String UrlFormat = currentEarthquake.getUrl();
+       // String UrlFormat = currentEarthquake.getUrl();
 
         // Find the TextView with view ID time
         TextView timeView = (TextView) myView.findViewById(R.id.time);
