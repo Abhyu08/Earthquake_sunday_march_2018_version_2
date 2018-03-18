@@ -3,4 +3,7 @@
     android:layout_height="match_parent"
     android:id="@+id/listview1"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#999"/>
+    android:background="#999"
+    android:divider="#666"
+    android:dividerHeight="1dp"
+    android:orientation="vertical"/>

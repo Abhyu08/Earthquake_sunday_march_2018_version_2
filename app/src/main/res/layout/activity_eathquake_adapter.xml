@@ -15,14 +15,14 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:layout_width="42dp"
-                android:layout_height="match_parent"
+                android:layout_width="42sp"
+                android:layout_height="42sp"
                 android:gravity="center"
                 android:text="7.2"
                 android:id="@+id/magnitude"
                 android:textColor="#fff"
                 android:textStyle="bold"
-                android:background="@color/colorPrimaryDark"/>
+                android:background="@drawable/magnitude_values"/>
 
         </LinearLayout>
 
