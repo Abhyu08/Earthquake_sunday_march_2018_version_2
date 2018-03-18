@@ -13,11 +13,11 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
-public class EarthquakeAdapter extends ArrayAdapter<String> {
+ class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
 
-    private static String LOCATION_SEPERATOR = "of";
+    private static String LOCATION_SEPERATOR = " of ";
 
-    EarthquakeAdapter(Context context, ArrayList<String> earthquakes) {
+    EarthquakeAdapter(Context context, ArrayList<Earthquake> earthquakes) {
         super(context, 0, earthquakes);
     }
 
@@ -25,13 +25,13 @@ public class EarthquakeAdapter extends ArrayAdapter<String> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View myView = convertView;
-        // LayoutInflater inflater = inflater.inflate( getContext() , R.layout.activity_eathquake_adapter , true);
+
         if (myView == null) {
-            myView = LayoutInflater.from(getContext()).inflate(R.layout.activity_eathquake_adapter, parent, true);
+            myView = LayoutInflater.from(getContext()).inflate(R.layout.activity_eathquake_adapter, parent, false);
         }
 
         //Here Error can occur ------->
-        Earthquake currentEarthquake = null;
+        Earthquake currentEarthquake = getItem(position);
 
         // Find the TextView with view ID location
         TextView locationView = (TextView) myView.findViewById(R.id.address);

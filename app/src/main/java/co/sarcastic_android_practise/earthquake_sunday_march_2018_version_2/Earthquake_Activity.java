@@ -9,15 +9,19 @@ import java.util.ArrayList;
 
 public class Earthquake_Activity extends AppCompatActivity {
 
+    public final String LOG_TAG = Earthquake_Activity.class.getName();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_earthquake_);
-        ArrayList<String> myArrayList = QueryUtils.extractEarthquakes();
 
-        final EarthquakeAdapter myearthAdapter = new EarthquakeAdapter(this, myArrayList);
+       ArrayList<Earthquake> myArrayList = QueryUtils.extractEarthquakes();
 
         ListView lv = (ListView) findViewById(R.id.listview1);
+
+        EarthquakeAdapter myearthAdapter = new EarthquakeAdapter(this, myArrayList);
+
 
         lv.setAdapter(myearthAdapter);
     }
