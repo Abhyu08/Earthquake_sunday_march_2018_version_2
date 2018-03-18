@@ -30,7 +30,7 @@ import java.util.ArrayList;
             myView = LayoutInflater.from(getContext()).inflate(R.layout.activity_eathquake_adapter, parent, false);
         }
 
-        //Here Error can occur ------->
+
         Earthquake currentEarthquake = getItem(position);
 
         // Find the TextView with view ID location
