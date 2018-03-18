@@ -19,7 +19,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="7.2"
-                android:id="@+id/magnitudetext"
+                android:id="@+id/magnitude"
                 android:textColor="#fff"
                 android:textStyle="bold"
                 android:background="@color/colorPrimaryDark"/>
@@ -42,16 +42,27 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="133dp"
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/address2"
+                android:layout_width="40sp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1sp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:text="Near of" />
+
+            <TextView
                 android:id="@+id/address"
-                android:layout_width="133dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5sp"
-                android:gravity="fill"
+                android:gravity="center"
+                android:textSize="12sp"
                 android:text="This is the textview " />
+
 
         </LinearLayout>
 
