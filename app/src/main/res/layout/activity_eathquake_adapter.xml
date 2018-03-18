@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="42dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="7.2"
+                android:id="@+id/magnitudetext"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="86dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5sp"
+                android:gravity="center"
+                android:text="Magnitude"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5sp"
+                android:gravity="fill"
+                android:text="This is the textview " />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/timetext"
+                android:layout_width="108dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2sp"
+                android:gravity="center"
+                android:text="Time: 12:00     Date : 12/12/12"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
