@@ -3,11 +3,7 @@ package co.sarcastic_android_practise.earthquake_sunday_march_2018_version_2;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class EathquakeAdapter extends AppCompatActivity {
+public class EathquakeAdapter {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_eathquake_adapter);
-    }
+
 }
